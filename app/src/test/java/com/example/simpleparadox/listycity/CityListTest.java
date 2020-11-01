@@ -33,7 +33,7 @@ class CityListTest {
     void testGetCities() {
         CityList cityList = mockCityList();
         
-        assertEquals(1, mockCity().compareTo(cityList.getCities().get(0)));
+        assertEquals(0, mockCity().compareTo(cityList.getCities().get(0)));
         
         City city = new City("Calgary", "Alberta");
         assertEquals(0, city.compareTo(cityList.getCities().get(0)));
